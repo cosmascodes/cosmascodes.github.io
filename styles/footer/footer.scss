@@ -1,0 +1,128 @@
+// viewports
+$mobiles: 280px;
+$tablets: 768px;
+$desktop: 1100px;
+
+@mixin mobile {
+    @media (min-width: #{$mobiles}){
+        @content;
+    }
+}
+@mixin tablets {
+    @media (min-width: #{$tablets}){
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+footer {
+    background: #000000;
+    color: #fff;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+    position: relative;
+
+    .row {
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        @include tablets{
+            flex-direction: row;
+        }
+        .lines{
+            position: absolute;
+            left: 0;
+            top: 20%;
+            height: 40%;
+            @include tablets{
+                height: 70%;
+            }
+        }
+    }
+    
+    .col {
+        flex-basis: 25%;
+        padding: 10px;
+    }
+    
+    .logo {
+        width: 80px;
+        margin-bottom: 30px;
+    }
+    
+    .col h3 {
+        width: fit-content;
+        margin-bottom: 30px;
+        position: relative;
+        color: white;
+    }
+    
+    .email-id {
+        width: fit-content;
+        border-bottom: 1px solid #ccc;
+        margin: 20px 0;
+    }
+    
+    ul li {
+        list-style: none;
+        margin-bottom: 12px;
+    }
+    
+    ul li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    form {
+        padding-bottom: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #fff;
+        margin-bottom: 50px;
+    }
+    
+    form input {
+        width: 100%;
+        padding: 5px;
+        background: transparent;
+        color: #ccc;
+        border: 0;
+        outline: none;
+    }
+    
+    form button {
+        background: transparent;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+    }
+    
+    .social-icons .fab {
+        margin-right: 8px;
+        background: rgba(255, 254, 254, 0.07);
+        color: #ffffff; 
+        font-size: 10px;
+    }
+    
+    hr {
+        width: 90%;
+        border: 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        margin: 20px auto;
+    }
+    
+    .copyright {
+        text-align: center;
+    
+    }
+}

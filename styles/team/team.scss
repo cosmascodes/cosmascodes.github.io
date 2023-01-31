@@ -1,0 +1,96 @@
+$--color-main-grad: linear-gradient(to right, #0c3df4 0%, #02b5ff 100%);
+// viewports
+$mobiles: 280px;
+$tablets: 768px;
+$desktop: 1100px;
+
+@mixin mobile {
+    @media (min-width: #{$mobiles}){
+        @content;
+    }
+}
+@mixin tablets {
+    @media (min-width: #{$tablets}){
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+#team{
+    text-align: center;
+    padding: 1.2em;
+    @include tablets{
+        padding: 100px 50px;
+    }
+    .section-head{
+        h6{
+            color: #02b5ff;
+        }
+    }
+    .row{
+        padding: 40px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        .item{
+            text-align: center;
+            margin: 1.2em 2em;
+            img{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                margin-bottom: 10px;
+                @include tablets{
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+            h4, h3{
+                font-size: 14px
+            }
+            h4{
+                color: rgba(0, 0, 0, 0.4);
+            }
+            .social-icons{ 
+                margin-top: 10px;
+                .fab {
+                width: 15px;
+                height: 15px;
+                line-height: 15px;
+                margin-right: 4px;
+                background: #eef4f8;
+                color: #000; 
+                font-size: 9px;
+                @include tablets{
+                    width: 30px;
+                    height: 30px;
+                    font-size: 13px;
+                    line-height: 30px;
+                }
+            }
+        }
+            
+        }
+    }
+    .links{
+        margin-top: 20px;
+        a{
+            color: #fff;
+            padding: 10px 15px;
+            margin: 4px;
+            border-radius: 4px;
+        }
+        .l1{
+            background-color: #000;
+        }
+        .l2{
+            background: $--color-main-grad;
+        }
+    }
+}

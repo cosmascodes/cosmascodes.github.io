@@ -1,0 +1,125 @@
+#actions {
+  position: relative;
+  padding: 100px 1.2em;
+}
+@media (min-width: 768px) {
+  #actions {
+    padding: 100px 110px;
+  }
+}
+#actions .side-bg {
+  position: absolute;
+  right: 0;
+  top: 45%;
+  z-index: -1;
+  height: 45%;
+}
+@media (min-width: 768px) {
+  #actions .side-bg {
+    height: 75%;
+    top: 30%;
+  }
+}
+#actions .l-side-bg {
+  position: absolute;
+  left: 0;
+  top: 15%;
+  z-index: -1;
+  height: 45%;
+}
+@media (min-width: 768px) {
+  #actions .l-side-bg {
+    top: 0;
+    height: 75%;
+  }
+}
+#actions .section-head {
+  text-align: left;
+  margin-bottom: 2em;
+}
+#actions .section-head h6 {
+  color: #02b5ff;
+}
+@media (min-width: 768px) {
+  #actions .section-head {
+    margin-bottom: 1.2em;
+  }
+}
+#actions #services .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  #actions #services .row {
+    flex-direction: row;
+  }
+}
+#actions #services .row .col {
+  margin: 15px 0;
+  border: 2px solid #eef4f8;
+  border-radius: 8px;
+  padding: 2em 1.2em;
+  background-color: #fff;
+  transition: all ease-in 0.1s;
+}
+@media (min-width: 768px) {
+  #actions #services .row .col {
+    width: 25vw;
+  }
+}
+#actions #services .row .col:hover {
+  border-color: transparent;
+  box-shadow: 0px 54px 115px 0px rgba(52, 60, 66, 0.25);
+}
+#actions #services .row .col:hover h3 {
+  color: #0c3df4;
+}
+#actions #services .row .col .service-item {
+  display: flex;
+  flex-direction: column;
+}
+#actions #services .row .col .service-item .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.5em;
+}
+#actions #services .row .col .service-item .title h3 {
+  font-size: 16px;
+}
+#actions #services .row .col .service-item .title h4 {
+  color: #02b5ff;
+  font-size: 11px;
+}
+#actions #services .row .col .service-item .service-icon {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+#actions #services .row .col .service-item .service-icon img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin: 1em 0;
+}
+#actions #services .row .col .service-item .service-text {
+  text-align: left;
+}
+#actions #services .row .col .service-item .service-text p {
+  font-size: 13px;
+}
+#actions #services .row .col .service-item .service-text .tags {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2em;
+}
+#actions #services .row .col .service-item .service-text .tags a {
+  color: #000;
+  background: #eef4f8;
+  padding: 8px 15px;
+  font-size: 11px;
+  border-radius: 2em;
+  margin-right: 1em;
+}/*# sourceMappingURL=services.css.map */

@@ -1,0 +1,133 @@
+// viewports
+$mobiles: 280px;
+$tablets: 768px;
+$desktop: 1100px;
+
+@mixin mobile {
+    @media (min-width: #{$mobiles}){
+        @content;
+    }
+}
+@mixin tablets {
+    @media (min-width: #{$tablets}){
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+#features{
+    padding: 1.2em;
+    overflow: hidden;
+    @include tablets{
+        padding: 100px 20px;
+    }
+    .row{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto 1fr;
+        @include tablets{
+            grid-template-rows: 1fr;
+        }
+        #anim{
+            grid-column: 2/3;
+            grid-row: 2/3;
+            position: relative;
+            margin-top: -10em;
+            @include tablets{
+                margin-top: 0;
+                margin-bottom: -5em;
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+            .circle{
+                height: 400px;
+                position: absolute;
+                animation: rotate-center 100s linear infinite both;
+                @include tablets{
+                    margin-top: 5em;
+                    height: 100%;
+                }
+                @keyframes rotate-center {
+                    0% {
+                        transform-origin: center;
+                        transform: rotate(0deg);
+                    }
+                    100% {
+                        transform-origin: center;
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+            .bubbles{
+                rotate: 180deg;
+                height: 200px;
+                margin-right: -3em;
+                animation: slide_up_down 2s ease-in-out infinite alternate both;
+                @include tablets{
+                    height: 100%;
+                    rotate: 0deg;
+                    margin-left: -5em;
+                }
+                @keyframes slide_up_down {
+                    0% {
+                        transform: translateY(0);
+                    }
+                    100% {
+                        transform: translateY(-20px);
+                    }
+                }               
+            }
+            .brands{
+                position: absolute;
+                left: 0;
+                height: 250px;
+                @include tablets{
+                    height: 100%;
+                }
+                animation: slide_up_down 2.2s ease-in-out infinite alternate both;
+            }
+        }
+        #text{
+            grid-column: 1/3;
+            grid-row: 1/2;
+            @include tablets{
+                grid-column: 2/3;
+            }
+            h1{
+                font-size: 14px;
+                font-weight: 400;
+                margin-bottom: 1.2em;
+                color: #02b5ff;
+            }
+            h2{
+                line-height: 1;
+                margin-bottom: .5em;
+                font-size: 2em;
+                @include tablets{
+                    font-size: 4em;
+                }
+            }
+            ul{
+                margin-top: 1em;
+                display: flex;
+                flex-direction: column;
+                @include tablets{
+                    flex-direction: row;
+                }
+                li{
+                    list-style: none;
+                    margin: 1em;
+                    font-weight: 600;
+                    img{
+                        width: 40px;
+                        margin-bottom: 1em;
+                    }
+                }
+            }
+        }
+    }
+}

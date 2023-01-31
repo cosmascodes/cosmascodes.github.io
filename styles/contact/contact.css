@@ -1,0 +1,138 @@
+#contact {
+  background: linear-gradient(to right, #0c3df4 0%, #02b5ff 100%);
+  position: relative;
+  overflow: hidden;
+  padding: 1.2em;
+}
+@media (min-width: 768px) {
+  #contact {
+    padding: 100px 8em;
+  }
+}
+#contact .contact_globe {
+  position: absolute;
+  left: -5em;
+  top: -50%;
+  width: 105%;
+  height: 127%;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+  border: 0;
+  opacity: 0.3;
+  -webkit-animation: rotate-center 100s linear infinite both;
+          animation: rotate-center 100s linear infinite both;
+}
+@media (min-width: 768px) {
+  #contact .contact_globe {
+    left: 0;
+    top: -15%;
+    width: 57%;
+  }
+}
+@-webkit-keyframes rotate-center {
+  0% {
+    transform-origin: center;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform-origin: center;
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    transform-origin: center;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform-origin: center;
+    transform: rotate(360deg);
+  }
+}
+#contact .container {
+  color: #fff;
+}
+#contact .container .content {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  #contact .container .content {
+    flex-direction: row;
+  }
+}
+#contact .container .content .contact_info {
+  font-size: 13px;
+}
+#contact .container .content .contact_info a {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+#contact .container .content .contact_info h4 {
+  font-size: 24px;
+}
+#contact .container .content .contact_info ul {
+  margin: 30px 0;
+}
+#contact .container .content .contact_info ul li {
+  font-size: 14px;
+  list-style: none;
+  margin-bottom: 1.2em;
+}
+#contact .container .content .contact_form .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#contact .container .content .contact_form .row .inps {
+  width: 48%;
+  margin: 0;
+}
+#contact .container .content .contact_form .inps {
+  background-color: #ffffff;
+  padding: 5px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+#contact .container .content .contact_form .inps input, #contact .container .content .contact_form .inps select, #contact .container .content .contact_form .inps textarea {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  resize: none;
+  font-size: 13px;
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+#contact .container .content .contact_form .bot-inp {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 13px;
+}
+#contact .container .content .contact_form .bot-inp a {
+  color: #fff;
+  text-decoration: underline;
+}
+#contact .container .content .contact_form .bot-inp input {
+  width: 1em;
+  height: 1em;
+  margin-right: 5px;
+}
+#contact .container .content .contact_form .submit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+#contact .container .content .contact_form .submit input {
+  background: transparent;
+  outline: 0;
+  border: 0;
+  color: #ffffff;
+}/*# sourceMappingURL=contact.css.map */

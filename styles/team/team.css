@@ -1,0 +1,77 @@
+#team {
+  text-align: center;
+  padding: 1.2em;
+}
+@media (min-width: 768px) {
+  #team {
+    padding: 100px 50px;
+  }
+}
+#team .section-head h6 {
+  color: #02b5ff;
+}
+#team .row {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#team .row .item {
+  text-align: center;
+  margin: 1.2em 2em;
+}
+#team .row .item img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  #team .row .item img {
+    width: 120px;
+    height: 120px;
+  }
+}
+#team .row .item h4, #team .row .item h3 {
+  font-size: 14px;
+}
+#team .row .item h4 {
+  color: rgba(0, 0, 0, 0.4);
+}
+#team .row .item .social-icons {
+  margin-top: 10px;
+}
+#team .row .item .social-icons .fab {
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  margin-right: 4px;
+  background: #eef4f8;
+  color: #000;
+  font-size: 9px;
+}
+@media (min-width: 768px) {
+  #team .row .item .social-icons .fab {
+    width: 30px;
+    height: 30px;
+    font-size: 13px;
+    line-height: 30px;
+  }
+}
+#team .links {
+  margin-top: 20px;
+}
+#team .links a {
+  color: #fff;
+  padding: 10px 15px;
+  margin: 4px;
+  border-radius: 4px;
+}
+#team .links .l1 {
+  background-color: #000;
+}
+#team .links .l2 {
+  background: linear-gradient(to right, #0c3df4 0%, #02b5ff 100%);
+}/*# sourceMappingURL=team.css.map */

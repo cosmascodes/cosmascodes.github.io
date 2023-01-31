@@ -1,0 +1,151 @@
+#features {
+  padding: 1.2em;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  #features {
+    padding: 100px 20px;
+  }
+}
+#features .row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 1fr;
+}
+@media (min-width: 768px) {
+  #features .row {
+    grid-template-rows: 1fr;
+  }
+}
+#features .row #anim {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  position: relative;
+  margin-top: -10em;
+}
+@media (min-width: 768px) {
+  #features .row #anim {
+    margin-top: 0;
+    margin-bottom: -5em;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
+#features .row #anim .circle {
+  height: 400px;
+  position: absolute;
+  -webkit-animation: rotate-center 100s linear infinite both;
+          animation: rotate-center 100s linear infinite both;
+}
+@media (min-width: 768px) {
+  #features .row #anim .circle {
+    margin-top: 5em;
+    height: 100%;
+  }
+}
+@-webkit-keyframes rotate-center {
+  0% {
+    transform-origin: center;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform-origin: center;
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate-center {
+  0% {
+    transform-origin: center;
+    transform: rotate(0deg);
+  }
+  100% {
+    transform-origin: center;
+    transform: rotate(360deg);
+  }
+}
+#features .row #anim .bubbles {
+  rotate: 180deg;
+  height: 200px;
+  margin-right: -3em;
+  -webkit-animation: slide_up_down 2s ease-in-out infinite alternate both;
+          animation: slide_up_down 2s ease-in-out infinite alternate both;
+}
+@media (min-width: 768px) {
+  #features .row #anim .bubbles {
+    height: 100%;
+    rotate: 0deg;
+    margin-left: -5em;
+  }
+}
+@-webkit-keyframes slide_up_down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes slide_up_down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+#features .row #anim .brands {
+  position: absolute;
+  left: 0;
+  height: 250px;
+  -webkit-animation: slide_up_down 2.2s ease-in-out infinite alternate both;
+          animation: slide_up_down 2.2s ease-in-out infinite alternate both;
+}
+@media (min-width: 768px) {
+  #features .row #anim .brands {
+    height: 100%;
+  }
+}
+#features .row #text {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+@media (min-width: 768px) {
+  #features .row #text {
+    grid-column: 2/3;
+  }
+}
+#features .row #text h1 {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 1.2em;
+  color: #02b5ff;
+}
+#features .row #text h2 {
+  line-height: 1;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+@media (min-width: 768px) {
+  #features .row #text h2 {
+    font-size: 4em;
+  }
+}
+#features .row #text ul {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  #features .row #text ul {
+    flex-direction: row;
+  }
+}
+#features .row #text ul li {
+  list-style: none;
+  margin: 1em;
+  font-weight: 600;
+}
+#features .row #text ul li img {
+  width: 40px;
+  margin-bottom: 1em;
+}/*# sourceMappingURL=features.css.map */

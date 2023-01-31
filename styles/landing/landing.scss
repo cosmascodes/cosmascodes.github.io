@@ -1,0 +1,104 @@
+// viewports
+$mobiles: 280px;
+$tablets: 768px;
+$desktop: 1100px;
+
+@mixin mobile {
+    @media (min-width: #{$mobiles}){
+        @content;
+    }
+}
+@mixin tablets {
+    @media (min-width: #{$tablets}){
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+#landing{
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('../../Assets/board.png');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid #00000025;
+    padding: 8em 1.2em 0 1.2em;
+    @include tablets{
+        padding: 10em 0 0 2em;
+    }
+    h6{
+        text-transform: uppercase;
+        color: #02b5ff;
+        font-size: 13px;
+        @include tablets{
+            margin-left: 2em;
+        }
+    }
+    article{
+        margin: .5em 0 4em 0;
+        h1{
+            font-size: 3em;
+            line-height: 1;
+            margin-bottom: .4em;
+            @include tablets{
+                width: 45vw;
+                font-size: 4em;
+            }
+        }
+        p{
+            @include tablets{
+                width: 30vw;
+            }
+        }
+    }
+    .select-links{
+        border-radius: 20px 0 0 0;
+        border-top: 1px solid #00000025;
+        border-left: 1px solid #00000025;
+        .row{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 1em 0 1em 1em;
+            @include tablets{
+                padding: 1.5em 0 .5em 1.5em;
+                flex-direction: row;
+            }
+            .col{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                text-align: right;
+                @include tablets{
+                    flex-direction: row;
+                    width: 45%;
+                    text-align: left;
+                }
+                #image-temp-1,#image-temp-2{
+                    width: inherit;
+                    height: 150px;
+                    background-color: #eef4f8;
+                    border-radius: 8px;
+                    @include tablets{
+                        width: 50%;
+                        margin-right: 1.2em;
+                    }
+                }
+                #image-temp-1{
+                    background: linear-gradient(90deg, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('/Assets/2.png');
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+                #image-temp-2{
+                    background: linear-gradient(90deg, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('/Assets/parts.jpg');
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+        }
+    }
+}

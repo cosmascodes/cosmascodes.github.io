@@ -1,0 +1,146 @@
+
+$--color-main-grad: linear-gradient(to right, #0c3df4 0%, #02b5ff 100%);
+
+// viewports
+$mobiles: 280px;
+$tablets: 768px;
+$desktop: 1100px;
+
+@mixin mobile {
+    @media (min-width: #{$mobiles}){
+        @content;
+    }
+}
+@mixin tablets {
+    @media (min-width: #{$tablets}){
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+#contact{
+    background: $--color-main-grad;
+    position: relative;
+    overflow: hidden;
+    padding: 1.2em;
+    @include tablets{
+        padding: 100px 8em;
+    }
+    .contact_globe{   
+        position: absolute;
+        left: -5em;
+        top: -50%;
+        width: 105%;
+        height: 127%;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+        border: 0;
+        opacity: 0.3;
+        animation: rotate-center 100s linear infinite both;
+        @include tablets{
+            left: 0;
+            top: -15%;
+            width: 57%;
+        }
+        @keyframes rotate-center {
+            0% {
+                transform-origin: center;
+              transform: rotate(0deg);
+            }
+            100% {
+                transform-origin: center;
+              transform: rotate(360deg);
+            }
+         }
+    }
+    
+    .container{
+        color: #fff;
+        .content{
+            margin: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @include tablets{
+                flex-direction: row;
+            }
+            .contact_info{
+                font-size: 13px;
+                a{
+                    color: #ffffff;
+                    text-transform: uppercase;
+                }
+                h4{
+                    font-size: 24px;
+                }
+                ul{
+                    li{
+                        font-size: 14px;
+                        list-style: none;
+                        margin-bottom: 1.2em;
+                    }
+                    margin: 30px 0;
+                }
+            }
+            .contact_form{
+                .row{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    .inps{
+                        width: 48%;
+                        margin: 0;
+                    }
+                }
+                .inps{
+                    background-color: #ffffff;
+                    padding: 5px;
+                    margin: 10px 0;
+                    border-radius: 4px;
+                    input, select, textarea{
+                        width: 100%;
+                        background: transparent;
+                        border: 0;
+                        outline: 0;
+                        resize: none;
+                        font-size: 13px;
+                        padding: 5px;
+                        font-family: 'Montserrat', sans-serif;
+
+                    }
+                }
+                .bot-inp{
+                    margin: 15px 0;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    align-items: center;
+                    font-size: 13px;
+                    a{
+                        color: #fff;
+                        text-decoration: underline;
+                    }
+                    input{
+                        width: 1em;
+                        height: 1em;
+                        margin-right: 5px;
+                    }
+                }
+                .submit{
+                    width: fit-content;
+                    background-color: rgba(0, 0, 0, 0.8);
+                    padding: 5px 15px;
+                    border-radius: 5px;
+                    input{
+                        background: transparent;
+                        outline: 0;
+                        border: 0;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}

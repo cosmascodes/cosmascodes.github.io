@@ -1,0 +1,101 @@
+footer {
+  background: #000000;
+  color: #fff;
+  padding: 100px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+  position: relative;
+}
+footer .row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  footer .row {
+    flex-direction: row;
+  }
+}
+footer .row .lines {
+  position: absolute;
+  left: 0;
+  top: 20%;
+  height: 40%;
+}
+@media (min-width: 768px) {
+  footer .row .lines {
+    height: 70%;
+  }
+}
+footer .col {
+  flex-basis: 25%;
+  padding: 10px;
+}
+footer .logo {
+  width: 80px;
+  margin-bottom: 30px;
+}
+footer .col h3 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 30px;
+  position: relative;
+  color: white;
+}
+footer .email-id {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+footer ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+footer form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 50px;
+}
+footer form input {
+  width: 100%;
+  padding: 5px;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+footer form button {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+footer .social-icons .fab {
+  margin-right: 8px;
+  background: rgba(255, 254, 254, 0.07);
+  color: #ffffff;
+  font-size: 10px;
+}
+footer hr {
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  margin: 20px auto;
+}
+footer .copyright {
+  text-align: center;
+}/*# sourceMappingURL=footer.css.map */
