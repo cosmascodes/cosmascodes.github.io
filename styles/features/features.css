@@ -34,23 +34,12 @@
 #features .row #anim .circle {
   height: 400px;
   position: absolute;
-  -webkit-animation: rotate-center 100s linear infinite both;
-          animation: rotate-center 100s linear infinite both;
+  animation: rotate-center 100s linear infinite both;
 }
 @media (min-width: 768px) {
   #features .row #anim .circle {
     margin-top: 5em;
     height: 100%;
-  }
-}
-@-webkit-keyframes rotate-center {
-  0% {
-    transform-origin: center;
-    transform: rotate(0deg);
-  }
-  100% {
-    transform-origin: center;
-    transform: rotate(360deg);
   }
 }
 @keyframes rotate-center {
@@ -67,22 +56,13 @@
   rotate: 180deg;
   height: 200px;
   margin-right: -3em;
-  -webkit-animation: slide_up_down 2s ease-in-out infinite alternate both;
-          animation: slide_up_down 2s ease-in-out infinite alternate both;
+  animation: slide_up_down 2s ease-in-out infinite alternate both;
 }
 @media (min-width: 768px) {
   #features .row #anim .bubbles {
     height: 100%;
     rotate: 0deg;
     margin-left: -5em;
-  }
-}
-@-webkit-keyframes slide_up_down {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(-20px);
   }
 }
 @keyframes slide_up_down {
@@ -97,8 +77,7 @@
   position: absolute;
   left: 0;
   height: 250px;
-  -webkit-animation: slide_up_down 2.2s ease-in-out infinite alternate both;
-          animation: slide_up_down 2.2s ease-in-out infinite alternate both;
+  animation: slide_up_down 2.2s ease-in-out infinite alternate both;
 }
 @media (min-width: 768px) {
   #features .row #anim .brands {
@@ -118,7 +97,7 @@
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 1.2em;
-  color: #02b5ff;
+  color: #26823A;
 }
 #features .row #text h2 {
   line-height: 1;

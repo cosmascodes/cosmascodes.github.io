@@ -1,5 +1,5 @@
 footer {
-  background: #000000;
+  background: #292929;
   color: #fff;
   padding: 100px 0 30px;
   font-size: 13px;
@@ -40,7 +40,6 @@ footer .logo {
   margin-bottom: 30px;
 }
 footer .col h3 {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-bottom: 30px;
@@ -48,7 +47,6 @@ footer .col h3 {
   color: white;
 }
 footer .email-id {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-bottom: 1px solid #ccc;
@@ -83,6 +81,7 @@ footer form button {
   border: 0;
   outline: 0;
   cursor: pointer;
+  color: #fff;
 }
 footer .social-icons .fab {
   margin-right: 8px;

@@ -8,7 +8,7 @@
   }
 }
 #team .section-head h6 {
-  color: #02b5ff;
+  color: #26823A;
 }
 #team .row {
   padding: 40px 0;
@@ -73,5 +73,5 @@
   background-color: #000;
 }
 #team .links .l2 {
-  background: linear-gradient(to right, #0c3df4 0%, #02b5ff 100%);
+  background: linear-gradient(to right, #26823A 0%, #44a058 100%);
 }/*# sourceMappingURL=team.css.map */

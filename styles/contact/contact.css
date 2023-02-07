@@ -1,5 +1,5 @@
 #contact {
-  background: linear-gradient(to right, #0c3df4 0%, #02b5ff 100%);
+  background: linear-gradient(to right, #26823A 0%, #26823A 100%);
   position: relative;
   overflow: hidden;
   padding: 1.2em;
@@ -18,24 +18,13 @@
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
   border: 0;
   opacity: 0.3;
-  -webkit-animation: rotate-center 100s linear infinite both;
-          animation: rotate-center 100s linear infinite both;
+  animation: rotate-center 100s linear infinite both;
 }
 @media (min-width: 768px) {
   #contact .contact_globe {
     left: 0;
     top: -15%;
     width: 57%;
-  }
-}
-@-webkit-keyframes rotate-center {
-  0% {
-    transform-origin: center;
-    transform: rotate(0deg);
-  }
-  100% {
-    transform-origin: center;
-    transform: rotate(360deg);
   }
 }
 @keyframes rotate-center {
@@ -123,7 +112,6 @@
   margin-right: 5px;
 }
 #contact .container .content .contact_form .submit {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   background-color: rgba(0, 0, 0, 0.8);

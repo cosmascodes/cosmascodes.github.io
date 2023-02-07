@@ -4,7 +4,7 @@
   background-position: right;
   background-repeat: no-repeat;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1450980392);
-  padding: 8em 1.2em 0 1.2em;
+  padding: 8em 0 0 1.2em;
 }
 @media (min-width: 768px) {
   #landing {
@@ -13,7 +13,7 @@
 }
 #landing h6 {
   text-transform: uppercase;
-  color: #02b5ff;
+  color: #26823A;
   font-size: 13px;
 }
 @media (min-width: 768px) {
@@ -41,9 +41,12 @@
   }
 }
 #landing .select-links {
+  background-color: #26823A;
   border-radius: 20px 0 0 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1450980392);
-  border-left: 1px solid rgba(0, 0, 0, 0.1450980392);
+  border-top: 1px solid #26823A;
+  border-left: 1px solid #26823A;
+  color: #fff;
+  padding-right: 1.2em;
 }
 #landing .select-links .row {
   display: flex;

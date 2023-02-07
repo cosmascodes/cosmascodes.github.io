@@ -38,7 +38,7 @@
   margin-bottom: 2em;
 }
 #actions .section-head h6 {
-  color: #02b5ff;
+  color: #26823A;
 }
 @media (min-width: 768px) {
   #actions .section-head {
@@ -74,7 +74,7 @@
   box-shadow: 0px 54px 115px 0px rgba(52, 60, 66, 0.25);
 }
 #actions #services .row .col:hover h3 {
-  color: #0c3df4;
+  color: #26823A;
 }
 #actions #services .row .col .service-item {
   display: flex;
@@ -90,11 +90,10 @@
   font-size: 16px;
 }
 #actions #services .row .col .service-item .title h4 {
-  color: #02b5ff;
+  color: #26823A;
   font-size: 11px;
 }
 #actions #services .row .col .service-item .service-icon {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
