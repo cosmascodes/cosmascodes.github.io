@@ -41,11 +41,9 @@
   }
 }
 #landing .select-links {
-  background-color: #26823A;
   border-radius: 20px 0 0 0;
-  border-top: 1px solid #26823A;
-  border-left: 1px solid #26823A;
-  color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.1450980392);
+  border-left: 1px solid rgba(0, 0, 0, 0.1450980392);
   padding-right: 1.2em;
 }
 #landing .select-links .row {
