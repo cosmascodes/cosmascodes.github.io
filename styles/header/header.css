@@ -48,3 +48,11 @@ header .extra_links {
   justify-content: space-between;
   align-items: center;
 }/*# sourceMappingURL=header.css.map */
+.image-container {
+  width: 300px;
+  height: 100px;
+  text-align: center;
+}
+.image-container img {
+  height: 100%;
+}
