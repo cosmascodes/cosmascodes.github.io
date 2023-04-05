@@ -10,7 +10,8 @@ header {
   font-weight: 600;
   padding: 2em;
   z-index: 999999;
-  background-color: #26823A;
+/*   background-color: #26823A; */
+  background-color: #FFFFFF;
   color: #fff;
 }
 @media (min-width: 768px) {
