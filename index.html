@@ -8,6 +8,7 @@
     <title>Home</title>
     <!-- <link rel="stylesheet" href="./styles/general.css"> -->
     <link rel="stylesheet" href="./styles/header/header.css">
+    <link rel="stylesheet" href="./styles/footer/footer.css">
     <link rel="stylesheet" href="styles/nicepage.css" media="screen">
     <link rel="stylesheet" href="styles/Home.css" media="screen">
 
@@ -42,24 +43,56 @@
       </div>
       <nav>
           <ul>
-              <a href="#">
+              <div class="dropdown">
+                <a href="#">
                   <li>Home</li>
-              </a>
-              <a href="about-us.html">
-                  <li>About</li>
-              </a>
-              <a href="#">
-                  <li>Programmes</li>
-              </a>
-              <a href="#">
+                </a>
+              </div>
+
+              <div class="dropdown">
+                <span>About</span>
+                <div class="dropdown-content">
+                  <a href="about-us.html#landing">
+                    <li>About us</li>
+                  </a>
+
+                  <a href="about-us.html#impact-model">
+                    <li>Our Impact & Sustainability Model</li>
+                  </a>
+
+                  <!-- <a href="about-us.html#business-model">
+                    <li>Business Model</li>
+                  </a> -->
+
+                  <a href="about-us.html#team">
+                    <li>Our Team</li>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <a href="#impact-programmes">
+                  <li>Impact Programmes</li>
+                </a>
+              </div>
+              
+              <div>
+                <a href="#">
                   <li>Get Involved</li>
-              </a>
-              <a href="#">
+                </a>
+              </div>
+
+              <div>
+                <a href="#partners">
                   <li>Our Partners</li>
-              </a>
-              <a href="#">
+                </a>
+              </div>
+
+              <div>
+                <a href="#donate">
                   <li>Donate</li>
-              </a>
+                </a>
+              </div>
           </ul>
       </nav>
       <div class="extra_links">
@@ -72,51 +105,81 @@
       </div>
   </header>
 
+  <!-- <section class="video-loop">
+    <div class="video-loop-div">
+      <video autoplay="" loop="" playsinline="">
+        <source src="/Assets/loop.mp4" type="video/mp4">
+        <img src="/Assets/loop.mp4" alt="Kano loop video">
+      </video>
+    </div>
+  </section> -->
+
     <section class="u-align-center u-clearfix u-image u-shading u-section-1" src="" data-image-width="1266" data-image-height="822" id="sec-b799">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-text u-text-default u-title u-text-1">
-            PCs &amp; Parts
+            PCs &amp; Parts Africa Group
         </h1>
         <p class="u-large-text u-text u-text-variant u-text-2"> 
-          Committed to changing lives through building horizontals and opening up spaces for access to computing<br>
+          We are committed to changing lives through building horizontals and opening up spaces 
+          for access to computing in Africa<br>
         </p>
       </div>
     </section>
 
-    <section class="u-align-center u-clearfix u-section-2" id="sec-a2f3">
+    <section id="mission" class="u-align-center u-clearfix u-section-2" id="sec-a2f3">
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <h5 class="u-text u-text-default u-text-1">
-            OUR MISSION IS TO MAKE COMPUTERS ACCESSIBLE IN KENYA
-        </h5>
+        <h1 class="">
+            Our Mission
+        </h1>
         <p class="u-text u-text-2"> 
-            Through a serendipitous sequence of events (more on that 
+            <!-- Through a serendipitous sequence of events (more on that 
             <a href="https://megangiacobetti.notion.site/The-Story-of-Computing-156cde2998ea49399ef097ba0e6cb04e" 
                 class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" 
                 target="_blank">here
             </a>
-            ), our team has launched a project with some of Kenya's premier engineering programs to make computers more accessible in Kenya. We firmly believe that building the foundation for a modular computing ecosystem that relies on computer parts already accessible in Kenya and educating those who desire access to computers to build and maintain using these parts is the first step to a democratized and sustainable computer space... So that is what we are doing! 
+            ),  -->
+            Our team at PCP Africa Group has launched a series of initiatives with African Universities and local communities to make 
+            computing more accessible in Africa. We firmly believe that building the 
+            foundation for a modular computing ecosystem that relies on computer parts already 
+            accessible in Africa and educating those who desire access to computing to circularly build and 
+            maintain using these parts is the first step to a democratized and sustainable 
+            computer space. 
         </p>
       </div>
     </section>
 
-    <section class="u-align-left u-clearfix u-image u-shading u-section-3" src="" data-image-width="1604" data-image-height="532" id="sec-9711">
+    <section id="impact-programmes" class="u-align-left u-clearfix u-image u-shading u-section-3" src="" data-image-width="1604" data-image-height="532" id="sec-9711">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-text u-text-default u-title u-text-1">
-            Education
+            Impact Programmes
         </h1>
-        <p class="u-text u-text-2"> 
-            Providing educational tools to equipped Kenyans to build and maintain PCs with the parts available locally. 
+        <br>
+        <div class="Programmes">
+          <p> 
+          The core focus of PCP Africa Group is to leverage global and regional technology networks to 
+          accelerate the democratization of computers in Africa through an open-access for all.</p>
+          <p>Other priority areas  include: </p>
+          <ul>
+            <li>Grassroot Impact & Learning</li>
+            <li>Emerging Technologies and Innovation</li>
+            <li>Futures Leadership and Governance</li>
+            <li>Education for All</li>
+            <li>Entrepreneurship & Equity</li>
+          </ul>
+        </div>
+        
+            <!-- Providing educational tools to equipped Kenyans to build and maintain PCs with the parts available locally. 
             To name a few, we are working with students today to spec and build the cheapest high performing PC possible. 
             As well we will be delivering 100 modular PCs from 
             <a href="https://kano.tech/us" class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" 
                 target="_blank">Kano
             </a> 
-            tech to our partner programs to teach students the inner workings of a computer.
-        </p>
+            tech to our partner programs to teach students the inner workings of a computer. -->
+        
       </div>
     </section>
 
-    <section class="u-align-left u-clearfix u-image u-shading u-section-4" src="" data-image-width="2410" data-image-height="774" id="sec-2c85">
+    <!-- <section class="u-align-left u-clearfix u-image u-shading u-section-4" src="" data-image-width="2410" data-image-height="774" id="sec-2c85">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-align-right u-text u-text-default u-title u-text-1">
             Platform
@@ -132,22 +195,24 @@
             partners will help us adopt this platform into the Kenyan market as the PCs &amp; Parts program develops!&nbsp;&nbsp;
         </p>
       </div>
-    </section>
+    </section> -->
 
-    <section class="u-align-left u-clearfix u-image u-shading u-section-5" src="" data-image-width="1836" data-image-height="638" id="sec-2c07">
+    <section class="u-clearfix u-image u-shading u-section-5" src="" data-image-width="1836" data-image-height="638" id="sec-2c07">
       <div class="u-clearfix u-sheet u-sheet-1">
         <h1 class="u-text u-text-default u-title u-text-1">
             Community&nbsp;
         </h1>
-        <p class="u-text u-text-2"> 
-            The PCs &amp; Parts community is growing already! As we partner with new organizations, we have found new and exciting ways to get inspired builders 
-            in Kenya involved in developing the program. Ultimately, PCs &amp; Parts is built for the Kenyan people, and we scale this project with a plan to pass 
-            on the torch to those that truly understand the Kenyan market, the local Kenyans themselves.&nbsp;
+        <br>
+        <p id="community" class="u-text u-text-2"> 
+            The PCP Africa Group community is growing already! As we partner with new organizations, universities and local communities
+            we are increasingly finding new and exciting ways to get inspired builders and learners in Africa involved in developing our 
+            impact programs. Ultimately, PCP Africa Group is mobilising resources (human, technological and financial) for the African 
+            people, and scaling up these programmes with a plan to pass on the torch to those that truly understand the African untapped potential and opportunities.
         </p>
       </div>
     </section>
 
-    <section class="u-clearfix u-section-6" id="sec-79bb">
+    <section id="donate" class="u-clearfix u-section-6" id="sec-79bb">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
           <div class="u-layout">
@@ -165,7 +230,8 @@
               </div>
               <div class="u-align-left u-container-style u-layout-cell u-right-cell u-size-17 u-layout-cell-2">
                 <div class="u-container-layout u-valign-middle u-container-layout-2">
-                    <a href="https://gofund.me/6b40772c" class="u-black u-btn u-button-style u-btn-1">
+                    <!-- <a href="https://gofund.me/6b40772c" class="u-black u-btn u-button-style u-btn-1"> -->
+                    <a href="" class="u-black u-btn u-button-style u-btn-1">
                         Donate Today!
                     </a>
                 </div>
@@ -176,12 +242,34 @@
       </div>
     </section>
 
-    <section class="u-align-center u-clearfix u-image u-shading u-section-7" src="" data-image-width="2064" data-image-height="498" id="sec-c023">
-      <div class="u-align-left u-clearfix u-sheet u-sheet-1"></div>
+    <section id="partners" class="u-align-center u-clearfix u-section-2" id="sec-a2f3">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h2>Our Partners</h2>
+        <div class="row">
+            <br>
+            <div class="col">
+              <img src="/Assets/KANO.png" alt="Kano logo">
+              <div class="row">
+                <div class="col">
+                  <span>Kano Computing</span>
+                </div>
+                
+              </div>
+            </div>
+
+            <div class="col">
+              <img src="/Assets/IMG_20230502_140023.jpg" alt="Grassroot Impact Centre">
+              <div class="row">
+                <span>Grassroot Impact Centre</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
     </section>
     
     
-    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-e239">
+    <!-- <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-e239">
         <div class="u-clearfix u-sheet u-sheet-1">
             <p class="u-small-text u-text u-text-variant u-text-1">
                 <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" 
@@ -190,9 +278,60 @@
                 </a>
             </p>
         </div>
-    </footer>
+    </footer> -->
+    <footer>
+      <div class="container">
+          <div class="row">
+              <img class="lines" src="./Assets/head_shape_l.png" alt="">
 
-    <section class="u-backlink u-clearfix u-grey-80">
+              <div class="col">
+                  <img src="./Assets/Group 98 - green bkg.png" class="logo">
+                  <h4></h4>
+              </div>
+
+              <div class="col">
+                  <h3>Office</h3>
+                  <p>Nairobi, Kenya</p>
+                  <p class="email-id">info@pcpafrica.org</p>
+                  <h4>+254 705 147 483</h4>
+              </div>
+
+              <div class="col">
+                  <h3>Links</h3>
+                  <ul>
+                      <li><a href="">Home</a></li>
+                      <li><a href="">Services</a></li>
+                      <li><a href="">About Us</a></li>
+                      <li><a href="">Contacts</a></li>
+                  </ul>
+              </div>
+
+              <div class="col">
+                  <h3>Newsletter</h3>
+                  <form>
+                      <i class="fa fa-envelope"></i>
+                      <input type="email" placeholder="Enter your email address" required>
+                      <button type="submit"><i class="fa fa-arrow-right"></i></i></button>
+                  </form>
+
+                  <div class="social-icons">
+                      <i class="fab fa fa-facebook"></i>
+                      <i class="fab fa fa-linkedin"></i>
+                      <i class="fab fa fa-github"></i>
+                      <i class="fab fa fa-twitter"></i>
+                      <i class="fab fa fa-instagram"></i>
+                  </div>
+
+              </div>
+
+          </div>
+
+      </div>
+      <hr>
+      <p class="copyright">PCs & Parts Africa © 2023 - All Rights Reserved</p>
+  </footer>
+
+    <!-- <section class="u-backlink u-clearfix u-grey-80">
       <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
         <span>Website Templates</span>
       </a>
@@ -202,6 +341,6 @@
       <a class="u-link" href="" target="_blank">
         <span>Website Builder Software</span>
       </a>. 
-    </section>
+    </section> -->
   </body>
 </html>
