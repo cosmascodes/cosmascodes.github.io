@@ -36,9 +36,11 @@
 }
 #team .row .item h4, #team .row .item h3 {
   font-size: 14px;
+  color: #124948;
 }
-#team .row .item h4 {
-  color: rgba(0, 0, 0, 0.4);
+#team .row .item h3{
+  font-style: italic;
+  font-weight: normal;
 }
 #team .row .item .social-icons {
   margin-top: 10px;

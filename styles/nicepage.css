@@ -376,7 +376,7 @@ details,
 figcaption,
 figure,
 footer,
-header,
+/* header, */
 main,
 menu,
 nav,
@@ -2061,12 +2061,12 @@ body,
 aside,
 .u-sidebar-block,
 section,
-header,
+/* header, */
 footer {
   position: relative;
 }
 section > *,
-header > *,
+/* header > *, */
 footer > *,
 .u-sheet > *,
 .u-section-row > * {
