@@ -226,7 +226,7 @@
     min-height: 122px;
   }
 } .u-section-5 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../Assets/ScreenShot2022-06-14at8.25.30AM.png");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../Assets/IMG20220713160952.jpg");
   background-position: 50% 50%;
 }
 
@@ -421,3 +421,63 @@
     min-height: 89px;
   }
 }
+
+#mission, #donate {
+  color: #124948;
+}
+.Programmes {
+  width: 70%;
+  padding-bottom: 35px;
+}
+
+.partners {
+  height: 300px;
+  width: 100%;
+
+}
+
+section .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em 0 1em 1em;
+}
+@media (min-width: 768px) {
+  section .row {
+    padding: 1.5em 0 0.5em 1.5em;
+    flex-direction: row;
+  }
+}
+section .row .col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+/* section .row .col .desc{
+  display: flex;
+  flex-direction: row;
+}
+.dec {
+  padding: 0.5em;
+
+} */
+@media (min-width: 768px) {
+  section .row .col {
+    flex-direction: row;
+    width: 45%;
+    text-align: left;
+  }
+}
+
+/* .video-loop{
+  background-color: black;
+  position: relative;
+  display: inline-block;
+}
+
+.video-loop-div {
+  height: 510px;
+  width: 352px;
+} */

@@ -28,11 +28,15 @@ header nav {
     display: unset;
   }
 }
-header a {
+header a, header span {
   text-decoration: none;
   color: #fff;
 }
-header a li {
+header span:hover {
+  cursor: default;
+  color: #478ac9;
+}
+header a li, header span {
   list-style: none;
   font-size: 15px;
 }
@@ -40,7 +44,7 @@ header ul {
   display: flex;
   flex-direction: row;
 }
-header ul a {
+header ul div {
   margin: 0 12px;
 }
 header .extra_links {
@@ -57,4 +61,25 @@ header .extra_links {
 }
 .image-container img {
   height: 100%;
+}
+/* Dropdown*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #056663;
+  width: 300px;
+  min-width: 160px;
+  border-radius: 3px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
