@@ -48,3 +48,14 @@ let swiper = new Swiper(".mySwiper", {
       }
     }
   });
+
+// Header responsiveness
+let responsiveHeader = () => {
+  let navBar = document.getElementById("nav");
+  if (navBar.className === "navbar"){
+    navBar.className += " responsive";
+  }
+  else {
+    navBar.className = "navbar";
+  }
+};
