@@ -11,18 +11,27 @@
     <link rel="stylesheet" href="./styles/footer/footer.css">
     <link rel="stylesheet" href="styles/nicepage.css" media="screen">
     <link rel="stylesheet" href="styles/Home.css" media="screen">
-    <link rel="icon" type="image/x-icon" href="Assets/Group 98 - green bkg.png">
+    
+
+    <link rel="icon" type="image/x-icon" href="assets/images/Group 98 - green bkg.png">
 
       <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.12.17, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-     
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -34,48 +43,60 @@
   </head>
 
   <body data-home-page="Home.html" data-home-page-title="Home" class="u-body u-xl-mode">
-    <header>
+    <header style="display:flex; align-items:center">
       <div class="logo">
-          <a href="/">
+          <a href="index.html">
               <div class="image-container">
-                  <img src="./Assets/Group 94 - green bkg.png" alt="PCP Africa logo">
+                  <img src="./assets/images/Group 94 - green bkg.png" alt="PCP Africa logo">
               </div>
           </a>
       </div>
-      <nav id="nav" class="navbar">
+      <nav id="nav" class="navbar" style="margin:0">
           <ul>
               <div class="dropdown">
-                <a href="/">
+                <a href="index.html">
                   <li>Home</li>
                 </a>
               </div>
-
               <div class="dropdown">
-                <span>About</span>
-                <div class="dropdown-content">
+                <button style="background-color:#124948; border: none;" class="dropbtn" onclick="myFunction()">
+                 About
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                
+                <div class="dropdown-content" id="myDropdown">
                   <a href="about-us.html#landing">
                     <li>About us</li>
                   </a>
 
-                  <a href="/impact-model.html">
+                  <a href="impact-model.html">
                     <li>Our Impact & Sustainability Model</li>
                   </a>
+                  <div class="dropdown" style="margin:0">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="font-size:15px; font-weight:600; background:none; padding:0; border: none;">
+                      Organizational Structure
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu sub-menu">
+                      <li>
+                        <a href="org-structure.html#advisory-council">Advisory Council</a>
+                      </li>
 
-                  <span>Organizational Structure</span>
-                  <div class="dropdown-content">
-                    <a href="/org-structure.html#advisory-council">
-                      <li>Advisory Council</li>
+                      <li>
+                        <a href="org-structure.html#team">The Secretariat</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                    <a href="about-us.html#team">
+                      <li>Our Team</li>
                     </a>
 
-                    <a href="/org-structure.html#team">
-                      <li>The Secretariat</li>
-                    </a>
                   </div>
                 </div>
               </div>
 
               <div>
-                <a href="#impact-programmes">
+                <a href="index.html#impact-programmes">
                   <li>Impact Programmes</li>
                 </a>
               </div>
@@ -87,13 +108,13 @@
               </div>
 
               <div>
-                <a href="#partners">
+                <a href="index.html#partners">
                   <li>Our Partners</li>
                 </a>
               </div>
 
               <div>
-                <a href="https://pcpafrica.org/donate.html">
+                <a href="donate.html">
                   <li>Donate</li>
                 </a>
               </div>
@@ -186,7 +207,7 @@
         <div class="row">
             <br>
             <div class="col">
-              <img src="/Assets/KANO.png" alt="Kano logo">
+              <img src="assets/images/KANO.png" alt="Kano logo">
               <div class="row">
                 <div class="col">
                   <span>Kano Computing</span>
@@ -196,7 +217,7 @@
             </div>
 
             <div class="col">
-              <img src="/Assets/IMG_20230502_140023.jpg" alt="Grassroot Impact Centre">
+              <img src="assets/images/IMG_20230502_140023.jpg" alt="Grassroot Impact Centre">
               <div class="row">
                 <span>Grassroot Impact Centre</span>
               </div>
@@ -209,10 +230,10 @@
     <footer>
       <div class="container">
           <div class="row">
-              <img class="lines" src="./Assets/head_shape_l.png" alt="">
+              <img class="lines" src="./assets/images/head_shape_l.png" alt="">
 
               <div class="col">
-                  <img src="./Assets/Group 98 - green bkg.png" class="logo">
+                  <img src="./assets/images/Group 98 - green bkg.png" class="logo">
                   <h4></h4>
               </div>
 
@@ -265,5 +286,24 @@
   <script>
       AOS.init();
   </script>
+
+  <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (e) {
+        if (!e.target.matches(".dropbtn")) {
+          var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains("show")) {
+            myDropdown.classList.remove("show");
+          }
+        }
+      };
+    </script>
+
 </body>
 </html>

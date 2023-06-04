@@ -5,26 +5,36 @@
     <meta charset="utf-8">
     <meta name="keywords" content="PCs&nbsp; &amp;amp; Parts, Education, Education, Education">
     <meta name="description" content="">
-    <title>Home</title>
+    <title>Get Involved</title>
     <!-- <link rel="stylesheet" href="./styles/general.css"> -->
     <link rel="stylesheet" href="./styles/header/header.css">
+    <link rel="stylesheet" href="./styles/footer/footer.css">
     <link rel="stylesheet" href="./styles/landing/landing.css">
     <link rel="stylesheet" href="./styles/team/team.css">
-    <link rel="stylesheet" href="./styles/footer/footer.css">
     <link rel="stylesheet" href="styles/nicepage.css" media="screen">
     <link rel="stylesheet" href="styles/Home.css" media="screen">
-    <link rel="icon" type="image/x-icon" href="Assets/Group 98 - green bkg.png">
+
+    <link rel="icon" type="image/x-icon" href="assets/images/Group 98 - green bkg.png">
 
       <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
 
     <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
     <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
     <meta name="generator" content="Nicepage 4.12.17, nicepage.com">
     <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
-     
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -36,54 +46,60 @@
   </head>
 
   <body data-home-page="Home.html" data-home-page-title="Home" class="u-body u-xl-mode">
-    <header>
+    <header style="display:flex; align-items:center">
       <div class="logo">
-          <a href="/">
+          <a href="index.html">
               <div class="image-container">
-                  <img src="./Assets/Group 94 - green bkg.png" alt="PCP Africa logo">
+                  <img src="./assets/images/Group 94 - green bkg.png" alt="PCP Africa logo">
               </div>
           </a>
       </div>
-      <nav id="nav" class="navbar">
+      <nav id="nav" class="navbar" style="margin:0">
           <ul>
               <div class="dropdown">
-                <a href="/">
+                <a href="index.html">
                   <li>Home</li>
                 </a>
               </div>
-
               <div class="dropdown">
-                <span>About</span>
-                  <div class="dropdown-content">
-                      <a href="about-us.html#landing">
-                        <li><b>About us</b></li>
-                      </a>
+                <button style="background-color:#124948; border: none;" class="dropbtn" onclick="myFunction()">
+                 About
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                
+                <div class="dropdown-content" id="myDropdown">
+                  <a href="about-us.html#landing">
+                    <li>About us</li>
+                  </a>
 
-                      <a href="/impact-model.html">
-                        <li>Our Impact & Sustainability Model</li>
-                      </a>
+                  <a href="impact-model.html">
+                    <li>Our Impact & Sustainability Model</li>
+                  </a>
+                  <div class="dropdown" style="margin:0">
+                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" style="font-size:15px; font-weight:600; background:none; padding:0; border: none;">
+                      Organizational Structure
+                    <span class="caret"></span></button>
+                    <ul class="dropdown-menu sub-menu">
+                      <li>
+                        <a href="org-structure.html#advisory-council">Advisory Council</a>
+                      </li>
 
-                      
-                        <div class="dropdown-content">
-                          <span><b>Organizational Structure</b></span>
-                            <a href="/org-structure.html#advisory-council">
-                              <li>Advisory Council</li>
-                            </a>
-
-                            <a href="/org-structure.html#team">
-                              <li>The Secretariat</li>
-                            </a>
-                        </div>
+                      <li>
+                        <a href="org-structure.html#team">The Secretariat</a>
+                      </li>
+                    </ul>
                   </div>
-            </div>
 
-                  <!-- <a href="about-us.html#business-model">
-                    <li>Business Model</li>
-                  </a> -->
+                    <a href="about-us.html#team">
+                      <li>Our Team</li>
+                    </a>
 
+                  </div>
+                </div>
+              </div>
 
               <div>
-                <a href="#impact-programmes">
+                <a href="index.html#impact-programmes">
                   <li>Impact Programmes</li>
                 </a>
               </div>
@@ -95,22 +111,19 @@
               </div>
 
               <div>
-                <a href="#partners">
+                <a href="index.html#partners">
                   <li>Our Partners</li>
                 </a>
               </div>
 
               <div>
-                <a href="/donate.html">
+                <a href="donate.html">
                   <li>Donate</li>
                 </a>
               </div>
           </ul>
       </nav>
       <div class="extra_links">
-          <!-- <a href="#">
-              <li><i class="fa fa-shopping-cart"></i></li>
-          </a> -->
           <label for="...">
               <span class="icon" onclick="responsiveHeader()"><i class="fa fa-bars"></i></span>
           </label>
@@ -135,7 +148,7 @@
                 </div>
                 <div class="col">
                     <article>
-                        <img src="Assets/IMG20220803154746.jpg" alt="About us">
+                        <img src="assets/images/IMG20220803154746.jpg" alt="About us">
                     </article>
                 </div>
             </div>
@@ -148,104 +161,104 @@
         </div>
         <div class="row">
             <!-- <div class="item">
-                <img src="/Assets/ches.png" alt="">
+                <img src="assets/images/ches.png" alt="">
                 <h3>CFO</h3>
                 <h4>Naomi Chesang</h4>
                 <div class="social-icons">
-                    <i class="fab fa fa-facebook"></i>
-                    <i class="fab fa fa-linkedin"></i>
-                    <i class="fab fa fa-github"></i>
-                    <i class="fab fa fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-twitter"></i>
                 </div>
             </div> -->
             <div class="item">
-                <img src="/Assets/tamiza.png" alt="">
+                <img src="assets/images/tamiza.png" alt="">
                 <h4>Tamiza Achieng'</h4>
                 <h3>Program Lead,</h3>
                 <h3>Liaison & Communication</h3>
                 <div class="social-icons">
-                    <i class="fab fa fa-facebook"></i>
-                    <i class="fab fa fa-linkedin"></i>
-                    <i class="fab fa fa-github"></i>
-                    <i class="fab fa fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-twitter"></i>
                 </div>
             </div>
 
             <div class="item">
-                <img src="/Assets/kyalo.png" alt="">
+                <img src="assets/images/kyalo.png" alt="">
                 <h4>Maurice Kyalo</h4>
                 <h3>Program Lead,</h3>
                 <h3>Emerging Technologies & Data Security</h3>
                 <div class="social-icons">
-                    <i class="fab fa fa-facebook"></i>
-                    <i class="fab fa fa-linkedin"></i>
-                    <i class="fab fa fa-github"></i>
-                    <i class="fab fa fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-twitter"></i>
                 </div>
             </div>
 
             <div class="item">
-                <img src="/Assets/esther.png" alt="">
+                <img src="assets/images/esther.png" alt="">
                 <h4>Esther Wamaitha</h4>
                 <h3>Program Lead,</h3>
                 <h3>Future Leadership & Governance Initiative</h3>
                 <div class="social-icons">
-                    <i class="fab fa fa-facebook"></i>
-                    <i class="fab fa fa-linkedin"></i>
-                    <i class="fab fa fa-github"></i>
-                    <i class="fab fa fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-twitter"></i>
                 </div>
             </div>
 
             <div class="item">
-                <img src="/Assets/cos.png" alt="">
+                <img src="assets/images/cos.png" alt="">
                 <h4>Cosmas Kiplangat</h4>
                 <h3>Focal Point,</h3>
                 <h3>University / Innovation Chapter</h3>
                 <div class="social-icons">
-                    <i class="fab fa fa-facebook"></i>
-                    <i class="fab fa fa-linkedin"></i>
-                    <i class="fab fa fa-github"></i>
-                    <i class="fab fa fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-twitter"></i>
                 </div>
             </div>
             
             <div class="item">
-                <img src="/Assets/wayne.png" alt="">
+                <img src="assets/images/wayne.png" alt="">
                 <h4>Wayne Omondi</h4>
                 <h3>Focal Point,</h3>
                 <h3>Grassroot Learning Chapter</h3>
                 <div class="social-icons">
-                    <i class="fab fa fa-facebook"></i>
-                    <i class="fab fa fa-linkedin"></i>
-                    <i class="fab fa fa-github"></i>
-                    <i class="fab fa fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-twitter"></i>
                 </div>
             </div>
 
             <div class="item">
-                <img src="/Assets/riyan.png" alt="">
+                <img src="assets/images/riyan.png" alt="">
                 <h4>Riyan Ibrahim</h4>
                 <h3>Program Lead,</h3>
                 <h3>Entrepreneurship Accelerator Initiative</h3>
                 <div class="social-icons">
-                    <i class="fab fa fa-facebook"></i>
-                    <i class="fab fa fa-linkedin"></i>
-                    <i class="fab fa fa-github"></i>
-                    <i class="fab fa fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-twitter"></i>
                 </div>
             </div>
             
             <div class="item">
-                <img src="/Assets/basil.png" alt="">
+                <img src="assets/images/basil.png" alt="">
                 <h4>Basil Khamala</h4>
                 <h3>Program Lead,</h3>
                 <h3>Innovation and Commercialization</h3>
                 <div class="social-icons">
-                    <i class="fab fa fa-facebook"></i>
-                    <i class="fab fa fa-linkedin"></i>
-                    <i class="fab fa fa-github"></i>
-                    <i class="fab fa fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-twitter"></i>
                 </div>
             </div>
         </div>
@@ -260,10 +273,10 @@
     <footer>
       <div class="container">
           <div class="row">
-              <img class="lines" src="./Assets/head_shape_l.png" alt="">
+              <img class="lines" src="./assets/images/head_shape_l.png" alt="">
 
               <div class="col">
-                  <img src="./Assets/Group 98 - green bkg.png" class="logo">
+                  <img src="./assets/images/Group 98 - green bkg.png" class="logo">
                   <h4></h4>
               </div>
 
@@ -293,11 +306,11 @@
                   </form>
 
                   <div class="social-icons">
-                      <i class="fab fa fa-facebook"></i>
-                      <i class="fab fa fa-linkedin"></i>
-                      <i class="fab fa fa-github"></i>
-                      <i class="fab fa fa-twitter"></i>
-                      <i class="fab fa fa-instagram"></i>
+                      <i class="fab fa-facebook"></i>
+                      <i class="fab fa-linkedin"></i>
+                      <i class="fab fa-github"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-instagram"></i>
                   </div>
 
               </div>
@@ -316,5 +329,24 @@
     <script>
         AOS.init();
     </script>
+
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function (e) {
+        if (!e.target.matches(".dropbtn")) {
+          var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains("show")) {
+            myDropdown.classList.remove("show");
+          }
+        }
+      };
+    </script>
+
   </body>
 </html>
