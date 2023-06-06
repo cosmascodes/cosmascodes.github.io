@@ -1,5 +1,5 @@
  .u-section-1 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../Assets/landing.png");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../assets/images/landing.png");
   background-position: 50% 50%;
 }
 
@@ -113,7 +113,7 @@
     width: 340px;
   }
 } .u-section-3 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../Assets/ScreenShot2022-06-14at8.29.17AM.png");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../assets/images/ScreenShot2022-06-14at8.29.17AM.png");
   background-position: 50% 50%;
 }
 
@@ -170,7 +170,7 @@
     min-height: 126px;
   }
 } .u-section-4 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../Assets/ScreenShot2022-06-14at8.23.42AM.png");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../assets/images/ScreenShot2022-06-14at8.23.42AM.png");
   background-position: 50% 50%;
 }
 
@@ -226,7 +226,7 @@
     min-height: 122px;
   }
 } .u-section-5 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../Assets/IMG20220713160952.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("../assets/images/IMG20220713160952.jpg");
   background-position: 50% 50%;
 }
 
@@ -390,7 +390,7 @@
     width: 340px;
   }
 } .u-section-7 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../Assets/ScreenShot2022-06-14at8.34.06AM.png");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../assets/images/ScreenShot2022-06-14at8.34.06AM.png");
   background-position: 50% 50%;
 }
 
@@ -481,3 +481,13 @@ section .row .col {
   height: 510px;
   width: 352px;
 } */
+
+.dropdown-menu.sub-menu {
+    position: absolute;
+    left: 120%;
+    top: -64%;
+    background-color: #124948;
+}
+.dropdown-menu.sub-menu li a {
+    color:#ffffff
+}
