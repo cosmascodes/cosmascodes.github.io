@@ -108,13 +108,13 @@
   }
 }
 #landing .select-links .row .col #image-temp-1 {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/Assets/2.png");
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/images/2.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 #landing .select-links .row .col #image-temp-2 {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/Assets/parts.jpg");
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/images/parts.jpg");
   background-size: cover;
   background-position: center;
 }/*# sourceMappingURL=landing.css.map */

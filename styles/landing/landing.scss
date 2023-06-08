@@ -20,7 +20,7 @@ $desktop: 1100px;
 }
 
 #landing{
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('../../Assets/board.png');
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url('../../assets/images/board.png');
     background-size: cover;
     background-position: right;
     background-repeat: no-repeat;
@@ -88,13 +88,13 @@ $desktop: 1100px;
                     }
                 }
                 #image-temp-1{
-                    background: linear-gradient(90deg, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('/Assets/2.png');
+                    background: linear-gradient(90deg, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('/assets/images/2.png');
                     background-size: contain;
                     background-position: center;
                     background-repeat: no-repeat;
                 }
                 #image-temp-2{
-                    background: linear-gradient(90deg, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('/Assets/parts.jpg');
+                    background: linear-gradient(90deg, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url('/assets/images/parts.jpg');
                     background-size: cover;
                     background-position: center;
                 }
